@@ -1,0 +1,45 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents</title>
+</head>
+<body>
+<h1>Taking input from user</h1>   
+ <form 
+ on submit="dosum(); return false"> 
+    Num1: <input type="number" id="num1">
+    <br>
+    Num2: <input type="number" id="num2">
+    <br>
+    <button type="submit">Do Sum</button>
+ </form>
+
+  <h1 id="result"></h1>
+
+<script>
+
+function dosum() {
+
+    console.log("I am dosum function running");
+
+    let num1= documentget.ElementById("num1");value
+    let num2= documentget.ElementById("num2");value
+
+    num1= Number(num1) ;
+    num2= Number(num2);
+
+    let sumResult = num1 + num2;
+
+    console.log("sumResult is" + sumResult);
+    
+   document.getElementById("sumResult"). innerHTML=sumResult;
+       
+}
+
+</script>
+
+</body>
+</html>
